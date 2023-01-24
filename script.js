@@ -72,18 +72,9 @@ function game() {
             .charAt(0)
             .toLowerCase();
         // let computer play
-        playRound(userInput, computerChoice);
+        playRound(userInput, getComputerChoice());
         // determine winner
         // keep playing until score reaches 5
-        if (playerScore === 5) {
-            console.log("You won the game. Congrats!");
-            return;
-        } else if (computerScore === 5) {
-            console.log(
-                "Computer won the game. Pray for a better luck next time!"
-            );
-            return;
-        }
     }
     if (playerScore > computerScore) {
         console.log("You won the game. Congrats!");
