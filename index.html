@@ -5,11 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="page-container">
+        <div class="scores">
+            <h1 id="player-score" class="score-text">Player Score: <span class="score">0</span> </h1>
+            <h1 id="ties" class="score-text">Ties: <span class="score">0</span> </h1>
+            <h1 id="computer-score" class="score-text">Computer Score: <span class="score">0</span></h1>
+        </div>
+        <div class="button-container">
+            <div class="button-name-pairs">
+                <button id="rock" class="button working"><img src="img/rock.png" alt="Rock" width="218px"
+                        height="238px"></button>
+                <h1 class="button-name">ROCK</h1>
+            </div>
+            <div class="button-name-pairs">
+                <button id="paper" class="button working"><img src="img/paper.png" alt="Paper" width="218px"
+                        height="238px"></button>
+                <h1 class="button-name">PAPER</h1>
+            </div>
+            <div class="button-name-pairs">
+                <button id="scissors" class="button working"><img src="img/scissors.png" alt="Scissors" width="218px"
+                        height="238px"></button>
+                <h1 class="button-name">SCISSORS</h1>
+            </div>
+        </div>
+        <h1 class="winner-feedback">BEST OF 10 WINS THE GAME!</h1>
+    </div>
 
 </body>
 
