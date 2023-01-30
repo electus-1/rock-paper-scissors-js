@@ -139,12 +139,16 @@ function onGameEnd() {
     let playAgainButton = document.createElement("button");
     playAgainButton.classList.add("game-ended");
     playAgainButton.textContent = "PLAY AGAIN";
-    playAgainButton.addEventListener("click", (e) => restartGame(e));
+    playAgainButton.addEventListener("click", (e) =>
+        restartGame(e, playAgainButton)
+    );
     page.appendChild(playAgainButton);
 }
 
-function restartGame(e) {
+async function restartGame(e, playAgainButton) {
     e.stopPropagation();
+    playAgainButton.style.transform = "translateY(4px) scale(1.1)";
+    await sleep(100);
     computerScore = 0;
     playerScore = 0;
     ties = 0;
